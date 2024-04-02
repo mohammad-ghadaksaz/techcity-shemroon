@@ -1,0 +1,389 @@
+body {
+  overflow-x: hidden;
+  font-family: "Markazi Text", serif;
+}
+
+main {
+  scroll-behavior: smooth;
+  padding: 0 !important;
+}
+
+#welcome {
+  transition: 0.4s;
+  transition-timing-function: linear;
+}
+
+#welc-pic {
+  transform: translateY(16vh);
+  scale: 1.3;
+}
+
+#welc-div {
+  font-family: "Markazi Text", serif;
+  overflow: hidden;
+}
+#welc-div h3 {
+  font-size: 24px;
+  font-weight: bolder;
+}
+#welc-div p {
+  font-size: 20px;
+  margin-top: 5px;
+  color: rgb(99, 99, 99);
+  text-align: center;
+}
+
+.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.copyright1 {
+  font-size: 13px;
+  color: rgb(188, 188, 188);
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif !important;
+}
+.copyright1 a {
+  color: rgb(35, 35, 35);
+}
+
+.h2 {
+  font-weight: bolder;
+  font-size: 30px;
+  color: rgb(1, 1, 74);
+}
+
+.h1 {
+  font-weight: lighter;
+  font-size: 17px;
+}
+
+header {
+  background: rgb(1, 1, 74);
+}
+
+.logo-header {
+  background-color: white;
+  border-bottom: 1px solid rgb(173, 173, 173);
+}
+.logo-header img {
+  transform: translateX(30px);
+}
+
+.cross {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 18px;
+  color: red;
+  cursor: pointer;
+}
+
+.hamburger i {
+  transition: 0.4s;
+  font-size: 35px;
+  font-weight: bolder;
+  transform: rotateY(180deg);
+  cursor: pointer;
+  color: white;
+}
+.hamburger i:hover {
+  text-shadow: 1px 1px 5px gainsboro;
+}
+
+.reg-nav > li {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: 0.4s;
+}
+.reg-nav > li:hover {
+  color: rgb(156, 156, 156);
+}
+.reg-nav > li:hover > .sub {
+  opacity: 1;
+  visibility: visible;
+}
+.reg-nav > li > .sub {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s;
+  z-index: 2;
+  border-radius: 0px 0px 10px 10px;
+  background-color: rgb(244, 244, 244);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.527);
+}
+.reg-nav > li > .sub > li {
+  color: black;
+  font-size: 19px;
+  transition: 0.4s;
+}
+.reg-nav > li > .sub > li:hover {
+  color: rgb(118, 118, 118);
+}
+.reg-nav > li > .sub:nth-of-type(2) > li:nth-of-type(1), .reg-nav > li > .sub:nth-of-type(2) > li:nth-of-type(2), .reg-nav > li > .sub:nth-of-type(2) > li:nth-of-type(3) {
+  font-family: "Nunito", sans-serif;
+}
+
+.notice {
+  background-color: rgb(237, 237, 237);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.947);
+}
+
+.mob-nav {
+  background-color: rgb(244, 244, 244);
+  border-bottom: 1px solid rgb(206, 206, 206);
+}
+.mob-nav > li {
+  font-size: 20px;
+  color: black;
+  transition: 0.4s;
+}
+.mob-nav > li:hover {
+  color: rgb(118, 118, 118);
+}
+
+.reg-gall {
+  margin-top: 60px;
+}
+
+.slider {
+  padding: 0px;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.slide_viewer {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.567);
+}
+
+.slide_group {
+  height: 100%;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.slide {
+  display: none;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition-timing-function: ease-in-out;
+}
+
+.slide:first-child {
+  display: block;
+}
+
+.slide:nth-of-type(1) {
+  background-image: url(../img/slide1.png);
+}
+
+.slide:nth-of-type(2) {
+  background-image: url(../img/slide3.png);
+}
+
+.slide:nth-of-type(3) {
+  background-image: url(..//img/slide4.png);
+}
+
+.slide_buttons {
+  left: 0;
+  position: absolute;
+  right: 0;
+  bottom: 2%;
+  text-align: center;
+}
+
+a.slide_btn {
+  color: #474544;
+  font-size: 42px;
+  margin: 0 0.175em;
+  transition: all 0.4s ease-in-out;
+}
+
+.slide_btn.active, .slide_btn:hover {
+  color: #428CC6;
+  cursor: pointer;
+}
+
+.directional_nav {
+  height: 340px;
+  margin: 0 auto;
+  max-width: 940px;
+  position: relative;
+  top: -340px;
+}
+
+.previous_btn {
+  bottom: 0;
+  left: 100px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+}
+
+.next_btn {
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  right: 100px;
+  top: 0;
+}
+
+.previous_btn, .next_btn {
+  cursor: pointer;
+  height: 65px;
+  opacity: 0.5;
+  transition: opacity 0.4s ease-in-out;
+  width: 65px;
+}
+
+.previous_btn:hover, .next_btn:hover {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 767px) {
+  .previous_btn {
+    left: 50px;
+  }
+  .next_btn {
+    right: 50px;
+  }
+}
+.divgal {
+  overflow: hidden;
+  position: relative;
+  transition: 0.7s !important;
+  box-shadow: 0px 0px 20px rgb(5, 0, 77);
+}
+.divgal h5 {
+  color: black;
+  background-color: white;
+  transition: 0.8s;
+  font-size: 20px;
+  font-weight: bolder;
+  transition-timing-function: ease-in-out;
+}
+.divgal h4 {
+  color: black;
+  background-color: white;
+  transition: 0.8s;
+  font-size: 30px;
+  font-weight: bolder;
+  z-index: 55;
+  transition-timing-function: ease-in-out;
+}
+.divgal img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  transition: 0.8s;
+  cursor: pointer;
+}
+.divgal:hover {
+  scale: 1.08;
+  border: none;
+  box-shadow: 0px 0px 20px rgb(26, 17, 160);
+}
+.divgal:hover img {
+  transform: rotateZ(17deg);
+}
+.divgal:hover h4, .divgal:hover h5 {
+  color: rgb(0, 179, 255);
+}
+.divgal:hover::after {
+  left: 100%;
+}
+
+.mob-gall h3 {
+  font-size: 30px;
+}
+
+.reg-gall h3 {
+  font-size: 37px;
+}
+
+.parralax {
+  overflow: visible;
+  z-index: 0;
+  background-image: url(../img/parralaxnotice.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.parralax2 {
+  overflow: visible;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.contbg {
+  background-color: rgb(233, 233, 233);
+  background-image: url(../img/cont.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.address {
+  font-size: 20px;
+}
+
+#contact {
+  color: white;
+  background: rgb(1, 1, 74);
+}
+#contact a {
+  transition: 0.4s;
+}
+#contact a:hover {
+  color: rgb(255, 255, 0);
+}
+#contact span {
+  font-weight: bold;
+}
+
+.contcont {
+  background: rgb(1, 1, 74);
+}
+
+.insta {
+  color: rgb(179, 15, 130);
+}
+
+.instatext {
+  color: rgb(255, 255, 255);
+}
+
+footer p {
+  background-color: black;
+}
+footer h4 {
+  color: rgb(153, 153, 153);
+  background-color: black;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+footer h5 {
+  color: rgb(180, 180, 180);
+  letter-spacing: 4px;
+  background-color: black;
+}/*# sourceMappingURL=master.css.map */
